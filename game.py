@@ -4,13 +4,13 @@ import pygame
 import sys
 import config # Import the config module 
 def init_game (): 
-  pygame.init()
-  screen = pygame.display.set_mode((config.WINDOW_WIDTH, config.WINDOW_HEIGHT)) # Use constants from config
-  pygame.display.set_caption(config.TITLE)
-  return screen
+    pygame.init()
+    screen = pygame.display.set_mode((config.WINDOW_WIDTH, config.WINDOW_HEIGHT)) # Use constants from config
+    pygame.display.set_caption(config.TITLE)
+    return screen
 
 
-def handle_events():
+def handle_events ():
     for event in pygame.event.get():
        if event.type == pygame.QUIT:
           return False
@@ -36,4 +36,3 @@ def main():
 
 if __name__ == "__name__":
    main()
-   
